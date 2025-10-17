@@ -1,0 +1,43 @@
+/* Custom styles for the Inter font and placeholder */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Defining the primary brand colors */
+:root {
+    --primary-color: #004d40; /* Deep Teal */
+    --secondary-color: #f7b32b; /* Gold/Amber */
+}
+
+/* Custom styles for the app screen placeholder */
+.hero-image {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937; /* Dark background */
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border: 4px solid var(--secondary-color);
+}
+.hero-image p {
+    color: #d1d5db;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Shadow specific to pricing cards */
+.price-shadow {
+    box-shadow: 0 15px 30px rgba(0, 77, 64, 0.1);
+}
+
+/* Applying the brand colors using custom Tailwind setup */
+/* These map Tailwind classes to the CSS variables */
+.bg-primary { background-color: var(--primary-color); }
+.text-primary { color: var(--primary-color); }
+.bg-secondary { background-color: var(--secondary-color); }
+.text-secondary { color: var(--secondary-color); }
+.border-primary { border-color: var(--primary-color); }
+.border-secondary { border-color: var(--secondary-color); }
